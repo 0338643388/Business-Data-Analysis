@@ -1,7 +1,7 @@
 # Phân Tích Kinh Doanh 2024
 
 ## Tổng Quan
-Dự án này phân tích hiệu suất kinh doanh năm 2024 của một công ty chuyên về điện thoại, máy tính và phụ kiện. Phân tích được thực hiện dựa trên một tập dữ liệu Excel toàn diện gồm 6 sheet (Khách hàng, Sản phẩm, Nhân viên, Dữ liệu bán hàng, Chi nhánh, KPI). Mục tiêu của dự án là khai thác những insight ẩn chứa và đề xuất các chiến lược tăng trưởng đột phá cho năm 2025.
+Dự án này phân tích hiệu suất kinh doanh năm 2024 của một công ty chuyên về điện thoại, máy tính và phụ kiện. Phân tích được thực hiện dựa trên một tập dữ liệu Excel gồm 6 sheet (Khách hàng, Sản phẩm, Nhân viên, Dữ liệu bán hàng, Chi nhánh, KPI). Mục tiêu của dự án là khai thác những insight ẩn chứa và đề xuất các chiến lược tăng trưởng đột phá cho năm 2025.
 
 > **“Liệu con số 1.034 tỷ đồng doanh thu và 345 tỷ đồng lợi nhuận năm 2024 đã phản ánh trọn vẹn bức tranh kinh doanh của công ty, hay vẫn còn những ‘góc khuất’ chưa được khám phá – nơi chúng ta có thể tìm thấy cơ hội bứt phá mới?”**
 
@@ -32,19 +32,25 @@ Dự án này phân tích hiệu suất kinh doanh năm 2024 của một công t
   - Số lượng bán ra biến động rõ rệt vào đầu năm (nhu cầu sắm mới sau Tết) và cuối năm (doanh nghiệp “thắt hầu bao” vì ưu tiên ngân sách cho mục đích khác).
 
 ## Phân Tích Nhóm Sản Phẩm
-- Công ty kinh doanh 4 dòng sản phẩm: **Phần mềm, Phụ kiện, Máy tính, Dịch vụ**.
+- Công ty kinh doanh 4 dòng sản phẩm: **Phần mềm, Phụ kiện, Máy tính, Dịch vụ** với 799 sản phẩm.
 - **Phân bổ doanh thu:**
   - Phần mềm: 53,43%
   - Phụ kiện: 26,35%
   - Máy tính: 14,95%
   - Dịch vụ: Phần còn lại
+- **Phân tích chi tiết:**
+  - Nhóm phần mềm chứa nhiều sản phẩm nhất với 555 sản phẩm, nhóm dịch vụ chứa ít sản phẩm nhất với 14 sản phẩm
+  - Tổng doanh thu và lợi nhuận của nhóm phần mềm cao nhất, của nhóm dịch vụ là thấp nhất. Tuy nhiên, tỷ trọng lợi nhuận/doanh thu không có sự thay đổi giữa các nhóm.
+  - Doanh thu trung bình và lợi nhuận trung bình của nhóm máy tính cao nhất, cho thấy đây là nhóm tập trung những mặt hàng giá trị cao; nhóm phần mềm thì ngược lại, cho thấy đa phần các sản phẩm thuộc nhóm này đều có giá trị thấp hơn hẳn 3 nhóm còn lại.
+  - Xét theo phần trăm đóng góp vào lợi nhuận, nhóm phần mềm đóng góp nhiều nhất với 55.29%, cho thấy đây là nhóm sản phẩm chủ lực của doanh nghiệp.
+  - Xét theo trình tự thời gian, có thể thấy xu hướng của nhóm phần mềm ngược lại so với 3 nhóm còn lại khi những tháng doanh thu nhóm phần mềm tăng thì 3 nhóm còn lại giảm và ngược lại.
 
 ## Hiệu Suất Chi Nhánh
 - **Phân bố theo vùng:** Công ty có 3 chi nhánh với doanh thu khá cân bằng, trong đó chi nhánh TP. HCM có doanh thu nhỉnh hơn một chút.
 - **KPI hàng tháng:**
-  - **Đà Nẵng:** Doanh thu thấp nhất nhưng đạt KPI 6/12 tháng (cao nhất).
-  - **TP. HCM:** Đạt KPI 5/12 tháng.
-  - **Hà Nội:** Đạt KPI 4/12 tháng.
+  - **Đà Nẵng:** Đạt 4/12 tháng KPI. Có xu hướng ổn định, với phần lớn các tháng đạt 95%-99% KPI. Tuy nhiên có 2 tháng dưới 95%.
+  - **TP. HCM:** Đạt KPI 5/12 tháng. Có hiệu suất biến dộng mạnh nhất, với 3 tháng dưới 95%.
+  - **Hà Nội:** Có hiệu suất cao nhất, với 6 tháng vượt KPI, chỉ 1 tháng dưới 95% => Đây là chi nhánh hoạt động hiểu quả nhất.
 - **Phân tích chi tiết:**
   - **TP. HCM:** 
     - Doanh thu theo nhóm ngành: Dịch vụ (18 tỷ), Máy tính (52 tỷ), Phần mềm (190 tỷ), Phụ kiện (92 tỷ).
